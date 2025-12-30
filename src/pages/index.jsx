@@ -22,7 +22,7 @@ import MyJobs from "./MyJobs";
 
 import Settings from "./Settings";
 
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from 'react-router-dom';
 
 const PAGES = {
     
@@ -96,6 +96,9 @@ function PagesContent() {
                 <Route path="/MyJobs" element={<MyJobs />} />
                 
                 <Route path="/Settings" element={<Settings />} />
+                
+                {/* Catch-all route - redirect to Home */}
+                <Route path="*" element={<Navigate to="/" replace />} />
                 
             </Routes>
         </Layout>

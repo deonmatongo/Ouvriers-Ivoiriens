@@ -60,6 +60,7 @@ export default function Header() {
   };
 
   const navLinks = [
+    { label: t('nav.home'), href: createPageUrl('Home') },
     { label: t('nav.categories'), href: createPageUrl('Categories') },
     { label: t('nav.workers'), href: createPageUrl('Workers') },
     { label: t('nav.howItWorks'), href: createPageUrl('HowItWorks') },
