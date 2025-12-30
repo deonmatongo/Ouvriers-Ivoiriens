@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { LanguageProvider } from './components/i18n/LanguageContext';
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
+import { LanguageProvider } from '../components/i18n/LanguageContext';
+import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
 import { Toaster } from "@/components/ui/sonner";
 
 export default function Layout({ children, currentPageName }) {
